@@ -5,6 +5,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { AuthService } from '../service/auth.service';
 import { UpdatepopComponent } from '../updatepop/updatepop.component';
+import { UpdateCartComponent } from '../update-cart/update-cart.component';
 
 @Component({
   selector: 'app-home',
@@ -42,10 +43,11 @@ export class HomeComponent {
   displayedColumns: string[] = ['id','name', 'price', 'quantity', 'action'];
 
   UpdateUser(code:any){
-   const popup = this.DIALOG.open(UpdatepopComponent,{
+   const popup = this.DIALOG.open(UpdateCartComponent,{
       enterAnimationDuration: '500ms',
       exitAnimationDuration: '500ms',
       width:'50%',
+      height:'10%',
       data:{
         usercode:code 
       }
