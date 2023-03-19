@@ -1,0 +1,15 @@
+mat-toolbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(49, 49, 49);
+  color:azure;
+ 
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
