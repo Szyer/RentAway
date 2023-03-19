@@ -1,0 +1,75 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "name": "admin adminUser",
+      "password": "Test@1234",
+      "email": "admin@g.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "harshalZ",
+      "name": "Harshal Zodape",
+      "password": "Test@1234",
+      "email": "hz@g.com",
+      "gender": "male",
+      "role": "Manager",
+      "isactive": true
+    },
+    {
+      "id": "Shreyash",
+      "name": "Shreyash Hake",
+      "password": "Shre@1234",
+      "email": "Shre@gmail.com",
+      "gender": "male",
+      "role": "Manager",
+      "isactive": true
+    },
+    {
+      "id": "Mansi",
+      "name": "Mansi Dhakite",
+      "password": "Mansi@123",
+      "email": "mansi@gmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isactive": false
+    }
+  ],
+  "role": [
+    {
+      "code": "Technician",
+      "name": "TechnicalHarshal"
+    },
+    {
+      "code": "Manager",
+      "name": "SandlelaShreyash"
+    },
+    {
+      "code": "staff",
+      "name": "DomdeStaff"
+    }
+  ],
+  "product": [
+    {
+      "id":1,
+      "name": "One Piece",
+      "price": "1000",
+      "quantity": "2"
+
+    },
+    {
+      "id":2,
+      "name": "Naruto",
+      "price": "800",
+      "quantity": "3"
+    },
+    {
+      "id":3,
+      "name": "Bleach",
+      "price": "900",
+      "quantity": "4"
+    }
+  ]
+}
