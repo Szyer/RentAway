@@ -21,3 +21,7 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+mat-toolbar button{
+  margin-left: 85%;
+}

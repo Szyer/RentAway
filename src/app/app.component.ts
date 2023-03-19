@@ -24,6 +24,8 @@ export class AppComponent implements DoCheck, AfterViewInit {
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer
   ){
+    
+  
     this.matIconRegistry.addSvgIcon(
       'menu',
       this.domSanitizer.bypassSecurityTrustResourceUrl('assets/menu.svg')
@@ -40,16 +42,17 @@ export class AppComponent implements DoCheck, AfterViewInit {
 
   ngDoCheck(): void {
     let currentUrl = this.router.url;
+   
     if(currentUrl=='/login' || currentUrl =='/register'){
       this.ismenurequired =false;
     }
     else{
       this.ismenurequired = true;
     }
-    if (currentUrl == 'admin') {
-      this.isadminuser = true;
+    if(this.service.getrole() === 'admin'){
+      this.isadminuser=true;
     }else{
-      this.isadminuser = false;
+      this.isadminuser=false;
     }
   }
 }

@@ -1,14 +1,20 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
+  isLoggedIn = new EventEmitter<boolean>();
+  isUserAdmin = new EventEmitter<boolean>();
+
   constructor(private http:HttpClient) { 
 
   }
+
+
+  
   apiurl='http://localhost:3000/user';
   
 
