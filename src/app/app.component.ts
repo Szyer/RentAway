@@ -3,6 +3,7 @@ import { AfterViewInit, Component, DoCheck, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { Router } from '@angular/router';
 import { Observable, map, shareReplay } from 'rxjs';
+import { AuthService } from './service/auth.service';
 
 
 @Component({
@@ -14,9 +15,11 @@ export class AppComponent implements DoCheck, AfterViewInit {
   title = 'newTask';
   @ViewChild('drawer', {static: false}) drawer!: MatSidenav;
   ismenurequired=false;
+  isadminuser=false;
   constructor(
     private router: Router,
-    private breakpointObserver: BreakpointObserver
+    private breakpointObserver: BreakpointObserver,
+    private service: AuthService
   ){}
   ngAfterViewInit(): void {
     this.drawer.toggle();
@@ -34,6 +37,11 @@ export class AppComponent implements DoCheck, AfterViewInit {
     }
     else{
       this.ismenurequired = true;
+    }
+    if (currentUrl == 'admin') {
+      this.isadminuser = true;
+    }else{
+      this.isadminuser = false;
     }
   }
 }

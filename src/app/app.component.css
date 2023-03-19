@@ -4,7 +4,7 @@
 
 .sidenav {
   width: 200px;
-  background-color: beige;
+ 
 }
 
 .sidenav .mat-toolbar {
@@ -16,4 +16,8 @@
   top: 0;
   z-index: 1;
   background-color: rgb(49, 49, 49);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
