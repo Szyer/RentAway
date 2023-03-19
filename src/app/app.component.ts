@@ -4,7 +4,8 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { Router } from '@angular/router';
 import { Observable, map, shareReplay } from 'rxjs';
 import { AuthService } from './service/auth.service';
-
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -19,8 +20,15 @@ export class AppComponent implements DoCheck, AfterViewInit {
   constructor(
     private router: Router,
     private breakpointObserver: BreakpointObserver,
-    private service: AuthService
-  ){}
+    private service: AuthService,
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer
+  ){
+    this.matIconRegistry.addSvgIcon(
+      'menu',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('assets/menu.svg')
+    );
+  }
   ngAfterViewInit(): void {
     this.drawer.toggle();
   }

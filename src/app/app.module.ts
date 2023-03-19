@@ -26,7 +26,6 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     LoginComponent,
     RegisterComponent,
     HomeComponent,
@@ -34,7 +33,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     UserlistingComponent,
     UpdateCartComponent,
     FooterComponent,
-    AboutusComponent
+    AboutusComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
