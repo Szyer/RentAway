@@ -42,7 +42,7 @@ export class LoginComponent {
         if(this.userdata.isactive){
           sessionStorage.setItem('username', this.userdata.id);
           sessionStorage.setItem('userrole', this.userdata.role);
-          this.router.navigate(['']);
+          this.router.navigate(['/aboutus']);
         }else{
           this.toastr.error("Inactive User, Please Contact Admin")
         }

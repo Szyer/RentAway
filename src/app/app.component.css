@@ -22,6 +22,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-mat-toolbar button{
+mat-toolbar .btn{
   margin-left: 85%;
 }

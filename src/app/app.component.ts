@@ -24,8 +24,6 @@ export class AppComponent implements DoCheck, AfterViewInit {
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer
   ){
-    
-  
     this.matIconRegistry.addSvgIcon(
       'menu',
       this.domSanitizer.bypassSecurityTrustResourceUrl('assets/menu.svg')

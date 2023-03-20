@@ -15,7 +15,7 @@
       "password": "Test@1234",
       "email": "hz@g.com",
       "gender": "male",
-      "role": "Manager",
+      "role": "Technician",
       "isactive": true
     },
     {
@@ -35,38 +35,46 @@
       "gender": "male",
       "role": "staff",
       "isactive": false
+    },
+    {
+      "id": "ramesh",
+      "name": "ramesh",
+      "password": "Ram@12345",
+      "email": "ram@g.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
     }
   ],
   "role": [
     {
       "code": "Technician",
-      "name": "TechnicalHarshal"
+      "name": "Technician"
     },
     {
       "code": "Manager",
-      "name": "SandlelaShreyash"
+      "name": "Manager"
     },
     {
       "code": "staff",
-      "name": "DomdeStaff"
+      "name": "Staff"
     }
   ],
   "product": [
     {
-      "id":1,
+      "id": 1,
       "name": "One Piece",
       "price": "1000",
       "quantity": "2"
-
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Naruto",
       "price": "800",
       "quantity": "3"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Bleach",
       "price": "900",
       "quantity": "4"

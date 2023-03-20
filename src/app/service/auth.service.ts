@@ -46,9 +46,7 @@ export class AuthService {
   getproduct(){
     return sessionStorage.getItem('product')!=null?sessionStorage.getItem('product')?.toString():'';
   }
-  GetAllCustomer(){
-    return this.http.get('http://localhost:3000/customer');
-  }
+
   Getaccessbyrole(role:any,menu:any){
     return this.http.get('http://localhost:3000/roleaccess?role='+role+'&menu='+menu)
   }
